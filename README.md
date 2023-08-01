@@ -1,5 +1,5 @@
 # Age-Calculator-App-Frontend-Mentor-Challenge
-**Age Calculator App using vanilla JavaScript , HTML and CSS - Flexbox &amp; Grid**
+**Solution :- Age Calculator App**
 
 
 - I have built Age Calculator App using vanilla Javascript, HTML and CSS – Flexbox & Grid.
@@ -11,7 +11,7 @@
 **Challenge**
 1. View an age in years, months, and days after submitting a valid date.
 2. Receive validation errors if:
-  - Any field is empty when the form is submitted
+  - Any field is empty when submitted
   - The day number is not between 1-31
   - The month number is not between 1-12
   - The year is in the future
