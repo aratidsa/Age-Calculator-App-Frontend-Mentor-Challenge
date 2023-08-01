@@ -68,16 +68,18 @@ enterYear.addEventListener('input',function()
 {
   if(enterYear.value > 2023)
   { document.querySelector('.year-invalid-msg').style.display='block'
+    document.querySelector('.year-invalid').style.display='none'
     document.querySelector('.input-data-year').style.border='1px solid hsl(0, 100%, 67%)'
     document.querySelector('.title2').style.color='hsl(0, 100%, 67%)' }
     else if(enterYear.value < 1800)
     {
       document.querySelector('.year-invalid').style.display='block'
-    document.querySelector('.input-data-year').style.border='1px solid hsl(0, 100%, 67%)'
-    document.querySelector('.title2').style.color='hsl(0, 100%, 67%)' }
+      document.querySelector('.year-invalid-msg').style.display='none'
+      document.querySelector('.input-data-year').style.border='1px solid hsl(0, 100%, 67%)'
+      document.querySelector('.title2').style.color='hsl(0, 100%, 67%)' }
      else
     { document.querySelector('.year-invalid-msg').style.display='none'
-    document.querySelector('.year-invalid').style.display='none'
+      document.querySelector('.year-invalid').style.display='none'
       document.querySelector('.input-data-year').style.border='1px solid hsl(0, 0%, 86%)'
       document.querySelector('.title2').style.color='hsl(0, 1%, 44%)' } 
       document.querySelector('.year-error-msg').style.display='none' 
@@ -168,7 +170,6 @@ submit.addEventListener('click',function()
       clearInterval(counts2)
     }
   }
-
 }
 else{
   displayDate.innerHTML=" --"
