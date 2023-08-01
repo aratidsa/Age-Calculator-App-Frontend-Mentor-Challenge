@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator App | Frontend Mentor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="age-app bg-white">
+            <section class="form">
+               <section class="uppercase fs-13 letter-spacing-1">
+                   <label class="title">Day</label>
+                   <label class="title1">Month</label>
+                   <label class="title2">Year</label>
+                </section>
+                <section class="input-fields flex">
+                    <div>
+                        <input type="number" placeholder="DD" id="2" class="input-data-day input-date invalid">
+                        <p class="date-error-msg text-red error-msg">This field is required</p>
+                        <p class="date-invalid-msg text-red invalid-msg">Must be a valid date</p>
+                    </div>
+                    <div>
+                        <input type="number" placeholder="MM" id="2" class="input-data-month input-gap input-month">
+                        <p class="month-error-msg text-red error-msg">This field is required</p>
+                        <p class="month-invalid-msg text-red invalid-msg">Must be a valid month</p>
+                    </div>
+                   <div>
+                    <input type="number" placeholder="YYYY" id="2" class="input-data-year input-gap input-year"> 
+                    <p class="year-error-msg text-red error-msg">This field is required</p>
+                    <p class="year-invalid-msg text-red invalid-msg">Must be in the past</p>
+                    <p class="year-invalid text-red invalid-msg">Invalid Year</p>
+                   </div>
+                </section>                  
+                <section class="submit-form flex">
+                    <button class="submitBtn bg-purple"> <img src="icon-arrow.svg" alt="submit arrow button" class="submitBtn-img"> </button>
+                </section>          
+            </section>
+            <section class="display-age fs-32">
+                <h1 class="years-display text-offBlack"><span class="yrs text-purple">--</span> years </h1>                
+                <h1 class="months-display text-offBlack"><span class="mnths text-purple">--</span> months </h1>
+                <h1 class="days-display text-offBlack"><span class="dys text-purple">--</span> days </h1>                
+            </section>  
+        </section>
+    </main>
+    <footer class="fs-13">Challenge by Frontend Mentor. Coded by Arati D'sa.</footer>      
+    <script src="app.js"></script>
+</body>
+</html>

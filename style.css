@@ -1,0 +1,406 @@
+/* ---------------------  RESET ----------------------- */
+
+html,body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,button,textarea,select
+{
+    font: inherit;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* -------------------- Custom Properties ------------------- */
+
+:root{
+
+    /* --------font-family-------- */
+    --ff-serif:'Poppins', sans-serif;
+
+    /* --------font-sizes-------- */
+    --fs-32:2rem;
+    --fs-15:0.94rem;
+    --fs-13:0.81rem;
+
+    /* --------font-color------- */
+    --clr-white:0, 0%, 100%;
+    --clr-offWhite:0, 0%, 94%;
+    --clr-mediumLightGrey:0, 9%, 94%;
+    --clr-smokeyGrey:0, 1%, 44%;
+    --clr-offBlack:0, 0%, 8%;
+    --clr-purple:259, 100%, 65%;
+    --clr-lightRed:0, 100%, 67%;
+    --clr-lightGrey:0, 0%, 86%;
+}
+
+/* ---------------set up the body------------- */
+body{
+    font-family: var(--ff-serif);
+    background-color:hsl(var(--clr-mediumLightGrey)) ;
+    color:hsl(var(--clr-smokeyGrey));
+    line-height: 1.5;
+    min-height:100vh;
+    display: grid;
+    place-content: center; 
+}
+
+/* -------------- Typography --------------- */
+
+/* Typography - font-family */
+.ff-serif{ font-family:var(--ff-serif);}
+
+/* Typography - font-size */
+.fs-32{ font-size: var(--fs-32);}
+.fs-15{ font-size: var(--fs-15);}
+.fs-13{ font-size: var(--fs-13);}
+
+
+/* Typography - background color */
+.bg-white{ background-color:hsl(var(--clr-white));}
+.bg-purple{ background-color:hsl(var(--clr-purple));}
+
+
+/* Typography - text color */
+.text-red{ color:hsl(var(--clr-lightRed));}
+.text-offBlack{ color:hsl(var(--clr-offBlack));}
+.text-purple{ color:hsl(var(--clr-purple));}
+
+/* Typography - letter-spacing */
+.letter-spacing-1 { letter-spacing: 0.15rem; } 
+
+/* --------------------- Utility Class -------------------*/
+.flex
+{
+    display:flex;
+}
+
+.container
+{
+    max-width: 75rem;
+    max-height: 36rem;
+    display: flex;
+}
+
+.uppercase
+{
+    text-transform: uppercase;
+}
+
+/* --------------------- Components -------------------*/
+
+.age-app
+{
+    width:46.25rem;
+    height:36.25rem;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+    border-bottom-right-radius: 25%;
+}
+
+.form
+{
+    margin:3.13rem;  
+}
+
+.title1
+{
+    margin-left:8.13rem;
+}
+
+.title2
+{
+    margin-left:6.44rem;
+}
+
+.input-fields
+{
+    margin-top:0.31rem;
+    border-bottom:1px solid hsl(var(--clr-lightGrey));
+    width:34.38rem; 
+    height:7.81rem;
+}
+
+.input-data-day
+{
+    width:5.94rem;
+    height:2.5rem;
+    padding:0.63rem 1.25rem;
+    border-radius: 0.31rem;
+    border:1px solid hsl(var(--clr-lightGrey));
+    font-size: 1.57rem;
+    margin-bottom:0.63rem;
+}
+
+.input-data-month
+{
+    width:5.94rem;
+    height:2.5rem;
+    padding:0.63rem 1.25rem;
+    border-radius: 0.31rem;
+    border:1px solid hsl(var(--clr-lightGrey));
+    font-size: 1.57rem;
+    margin-bottom:0.63rem;    
+}
+
+.input-data-year
+{
+    width:5.94rem;
+    height:2.5rem;
+    padding:0.63rem 1.25rem;
+    border-radius: 0.31rem;
+    border:1px solid hsl(var(--clr-lightGrey));
+    font-size: 1.57rem;   
+    margin-bottom:0.63rem;
+}
+
+.input-gap
+{
+    margin-left:1.88rem;
+}
+
+.error-msg
+{
+    height:2.5rem;
+    font-style: italic;
+    font-size: 0.69rem;   
+}
+
+.date-error-msg
+{   margin-top:-0.31rem;  
+    display: none;
+}
+
+.month-error-msg
+{  margin-top:-0.31rem;
+   margin-left:1.88rem;
+    display: none;
+}
+
+.year-error-msg
+{    margin-top:-0.31rem;
+    margin-left:1.88rem;     
+    display: none;
+}
+
+.invalid-msg
+{    
+    font-style: italic;
+    font-size: 0.69rem;
+}
+
+.date-invalid-msg
+{   margin-top:-0.31rem;    
+    display: none;
+}
+
+.month-invalid-msg
+{   margin-top:-0.25rem; 
+    margin-left:1.88rem;
+    display: none;
+}
+
+.year-invalid-msg
+{   margin-top:-0.25rem; 
+    margin-left:1.88rem;
+    display: none; 
+}
+
+.year-invalid
+{   margin-top:-0.25rem; 
+    margin-left:1.88rem;
+    display: none; 
+}
+
+.submitBtn-img
+{
+   width:2.5rem;
+   height:2.5rem; 
+}
+
+.submitBtn
+{
+  border:none;
+  border-radius:50%;
+  width:5rem;
+  height:5rem;
+  padding:0 1.25rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.submitBtn:hover
+{
+  background-color: hsl(var(--clr-offBlack));
+}
+
+.submit-form
+{
+  justify-content: flex-end;
+  margin-top:-2.5rem;
+  width:39.38rem;
+}
+
+.display-age
+{
+  margin:3.13rem;
+  font-size:4.38rem;
+  margin-top:-6.25rem;
+  font-style:italic;
+}
+
+.months-display
+{
+  margin-top:-6.25rem;
+}
+
+.days-display
+{
+   margin-top:-6.25rem; 
+}
+
+footer{
+   font-style: italic;
+}
+
+@media screen and (max-width:600px)
+{
+    .container
+    {  max-width: 21.88rem; }
+    
+    .age-app
+    {
+        width:21.88rem;
+        height:30rem;
+    }
+    .form
+    {
+        margin-top:3.13rem;  
+        margin-right:0.63rem;
+        margin-left:1.44rem;
+    }
+    .title1
+    {
+        margin-left:4.25rem;
+    }
+    
+    .title2
+    {
+        margin-left:2.44rem;
+    }
+    .input-fields
+    {
+        margin-top:0.31rem;
+        border-bottom:1px solid hsl(var(--clr-lightGrey));
+        width:19.06rem; 
+        height:6.88rem;
+    }
+
+    .input-data-day
+    {
+        width:3.13rem;
+        height:1.88rem;        
+        font-size: 1.25rem;
+        margin-bottom:0.63rem;
+    }
+
+    .input-data-month
+    {
+        width:3.13rem;
+        height:1.88rem;     
+        font-size: 1.25rem;
+        margin-bottom:0.63rem;       
+    }
+    
+    .input-data-year
+    {
+        width:3.13rem;
+        height:1.88rem; 
+        font-size: 1.25rem;   
+        margin-bottom:0.63rem;
+    }
+
+    .input-gap
+    {
+        margin-left:0.94rem;
+    }
+
+    .submitBtn-img
+    {
+       width:1.25rem;
+       height:1.25rem; 
+    }
+    .submitBtn
+    {
+      width:3.13rem;
+      height:3.13rem;
+      padding:0 0.63rem 0px 0.94rem;
+    }
+ 
+    .submit-form
+    {      
+      margin-top:-1.88rem;
+      width:10.94rem;
+    }
+
+    .error-msg
+    {
+        font-size:0.5rem;   
+    }
+
+    .month-error-msg
+    {   
+        margin-left:0.94rem;        
+    }
+    
+    .year-error-msg
+    {  
+        margin-left:1.25rem;            
+    }
+
+    .invalid-msg
+    {    
+        font-size:0.5rem;
+    }
+    
+    .month-invalid-msg
+    {  
+        margin-left:1.25rem;       
+    }
+    
+    .year-invalid-msg
+    { 
+        margin-left:1.25rem;         
+    }
+
+    .display-age
+    {
+      margin:1.88rem;
+      font-size:2.81rem;
+      margin-top:-1.88rem;
+    }
+
+    .months-display
+    {
+      margin-top:-3.75rem;
+    }
+    
+    .days-display
+    {
+       margin-top:-3.75rem; 
+    }   
+
+}
+
